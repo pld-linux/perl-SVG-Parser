@@ -5,8 +5,8 @@
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	SVG
 %define	pnam	Parser
-Summary:	%{pdir}::%{pnam} - converts SVG XML documents into SVG objects
-Summary(pl):	%{pdir}::%{pnam} - konwersja dokumentów SVG XML do obiektów SVG
+Summary:	SVG::Parser - converts SVG XML documents into SVG objects
+Summary(pl):	SVG::Parser - konwersja dokumentów SVG XML do obiektów SVG
 Name:		perl-SVG-Parser
 Version:	0.97
 Release:	1
