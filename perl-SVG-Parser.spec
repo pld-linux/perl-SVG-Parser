@@ -17,7 +17,7 @@ Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version
 # Source0-md5:	48d7c76c30751d1c7487aba83c34d57f
 BuildRequires:	perl-SVG >= 2.0
 BuildRequires:	perl-XML-SAX
-BuildRequires:	perl-devel >= 5.8.0
+BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 Requires:	perl-SVG >= 2.0
 BuildArch:	noarch
