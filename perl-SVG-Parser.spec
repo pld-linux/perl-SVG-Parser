@@ -3,8 +3,8 @@
 %bcond_without	tests	# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	SVG
-%define	pnam	Parser
+%define		pdir	SVG
+%define		pnam	Parser
 Summary:	SVG::Parser - converts SVG XML documents into SVG objects
 Summary(pl):	SVG::Parser - konwersja dokumentów SVG XML do obiektów SVG
 Name:		perl-SVG-Parser
