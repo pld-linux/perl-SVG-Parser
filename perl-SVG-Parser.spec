@@ -30,7 +30,7 @@ parser, and may be given preferred list of parsers to try; the first
 to load successfully will be used.
 
 %description -l pl
-SVG::Parser to analizator XML konwertuj±cy dokumenty SVG XML na
+SVG::Parser to analizator XML-a konwertuj±cy dokumenty SVG XML na
 obiekty SVG, którymi mo¿na manipulowaæ przy u¿yciu modu³u SVG przed
 ponownym przekszta³ceniem na XML. Modu³ dzia³a z dowolnym
 zainstalowanym analizatorem Expat lub SAX, mo¿na podaæ listê
