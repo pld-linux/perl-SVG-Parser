@@ -6,7 +6,7 @@
 %define		pdir	SVG
 %define		pnam	Parser
 Summary:	SVG::Parser - converts SVG XML documents into SVG objects
-Summary(pl):	SVG::Parser - konwersja dokumentów SVG XML do obiektów SVG
+Summary(pl.UTF-8):   SVG::Parser - konwersja dokumentÃ³w SVG XML do obiektÃ³w SVG
 Name:		perl-SVG-Parser
 Version:	0.97
 Release:	1
@@ -30,13 +30,13 @@ regenerated into XML. It will work using any installed Expat or SAX
 parser, and may be given preferred list of parsers to try; the first
 to load successfully will be used.
 
-%description -l pl
-SVG::Parser to analizator XML-a konwertuj±cy dokumenty SVG XML na
-obiekty SVG, którymi mo¿na manipulowaæ przy u¿yciu modu³u SVG przed
-ponownym przekszta³ceniem na XML. Modu³ dzia³a z dowolnym
-zainstalowanym analizatorem Expat lub SAX, mo¿na podaæ listê
-preferowanych analizatorów - zostanie u¿yty pierwszy, który uda siê
-za³adowaæ.
+%description -l pl.UTF-8
+SVG::Parser to analizator XML-a konwertujÄ…cy dokumenty SVG XML na
+obiekty SVG, ktÃ³rymi moÅ¼na manipulowaÄ‡ przy uÅ¼yciu moduÅ‚u SVG przed
+ponownym przeksztaÅ‚ceniem na XML. ModuÅ‚ dziaÅ‚a z dowolnym
+zainstalowanym analizatorem Expat lub SAX, moÅ¼na podaÄ‡ listÄ™
+preferowanych analizatorÃ³w - zostanie uÅ¼yty pierwszy, ktÃ³ry uda siÄ™
+zaÅ‚adowaÄ‡.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
