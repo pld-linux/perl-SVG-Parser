@@ -6,7 +6,7 @@
 %define		pdir	SVG
 %define		pnam	Parser
 Summary:	SVG::Parser - converts SVG XML documents into SVG objects
-Summary(pl.UTF-8):   SVG::Parser - konwersja dokumentów SVG XML do obiektów SVG
+Summary(pl.UTF-8):	SVG::Parser - konwersja dokumentów SVG XML do obiektów SVG
 Name:		perl-SVG-Parser
 Version:	0.97
 Release:	1
