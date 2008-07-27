@@ -9,7 +9,7 @@ Summary:	SVG::Parser - converts SVG XML documents into SVG objects
 Summary(pl.UTF-8):	SVG::Parser - konwersja dokumentów SVG XML do obiektów SVG
 Name:		perl-SVG-Parser
 Version:	0.97
-Release:	1
+Release:	2
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
