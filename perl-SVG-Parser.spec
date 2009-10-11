@@ -8,17 +8,20 @@
 Summary:	SVG::Parser - converts SVG XML documents into SVG objects
 Summary(pl.UTF-8):	SVG::Parser - konwersja dokumentów SVG XML do obiektów SVG
 Name:		perl-SVG-Parser
-Version:	0.97
-Release:	2
+Version:	1.03
+Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	48d7c76c30751d1c7487aba83c34d57f
-BuildRequires:	perl-SVG >= 2.0
-BuildRequires:	perl-XML-SAX
+# Source0-md5:	58e1f95faede185edf0657abc443f668
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
+%if %{with tests}
+BuildRequires:	perl-SVG >= 2.0
+BuildRequires:	perl-XML-Parser
+BuildRequires:	perl-XML-SAX
+%endif
 Requires:	perl-SVG >= 2.0
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -42,17 +45,20 @@ załadować.
 %setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
-%{__perl} Makefile.PL \
-	INSTALLDIRS=vendor
-%{__make}
+%{__perl} Build.PL \
+	destdir=$RPM_BUILD_ROOT \
+	installdirs=vendor
+./Build
 
-%{?with_tests:%{__make} test}
+%{?with_tests:./Build test}
 
 %install
 rm -rf $RPM_BUILD_ROOT
 
-%{__make} install \
-	DESTDIR=$RPM_BUILD_ROOT
+./Build install
+
+install -d $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
+cp -a examples $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -63,3 +69,4 @@ rm -rf $RPM_BUILD_ROOT
 %{perl_vendorlib}/SVG/Parser.pm
 %{perl_vendorlib}/SVG/Parser
 %{_mandir}/man3/*
+%{_examplesdir}/%{name}-%{version}
