@@ -1,10 +1,10 @@
 #
 # Conditional build:
 %bcond_without	tests	# do not perform "make test"
-#
-%include	/usr/lib/rpm/macros.perl
+
 %define		pdir	SVG
 %define		pnam	Parser
+%include	/usr/lib/rpm/macros.perl
 Summary:	SVG::Parser - converts SVG XML documents into SVG objects
 Summary(pl.UTF-8):	SVG::Parser - konwersja dokumentów SVG XML do obiektów SVG
 Name:		perl-SVG-Parser
@@ -15,6 +15,7 @@ License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	58e1f95faede185edf0657abc443f668
+URL:		http://search.cpan.org/dist/SVG-Parser/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 %if %{with tests}
